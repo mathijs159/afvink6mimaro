@@ -26,11 +26,16 @@ def leesBestand (bestandsNaam):
 
 def maakHTML (gcPercentage, sequentie, bestandsnaam):
     #maakt een HTML bestand met de sequentie en berekende GC percentage
-    file = open("afvink6.html")
+    file = open("afvink6.html", "w")
 
     message = """<html>
     <head></head>
-    <body><p>Hello! Martijn</p></body>
+    <body><p>bestandsnaam:  <%bestandsnaam%><br
+    gcPercentage: <%gcPercentage%><br
+    sequentie: <%sequentie%>/>/></p></body>
     </html>"""
+
+    file.write(message)
+    file.close
     
 main()
