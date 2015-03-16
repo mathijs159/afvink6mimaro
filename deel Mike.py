@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 # Explicit paths specified without -i or -o; assuming --only paths...
@@ -10,3 +11,8 @@
 #	modified:   deel Mike.py
 #
 fantastische verandering
+=======
+
+Rowan test
+Rowan test 2
+>>>>>>> 5bafb749f6b7df483d965931025fe17940d2218a
