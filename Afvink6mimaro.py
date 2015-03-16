@@ -21,4 +21,8 @@ def bepaalGCpercentage (sequentie):
     print(float(gcPercentage)*100)
 
 
+def maakHTML (bepaalGCpercentage):
+    #maakt een HTML bestand met de sequentie en berekende GC percentage
+    
+
 main()
