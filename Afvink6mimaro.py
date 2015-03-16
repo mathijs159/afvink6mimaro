@@ -12,7 +12,7 @@ def bepaalGCpercentage (sequentie):
     totalCount = gCount + cCount + aCount + tCount
     gcCount = gCount + cCount
     gcPercentage = float(gcCount) / float(totalCount)
-    print(float(gcPercentage)*100)
+    return(float(gcPercentage)*100)
 
 main()
     
