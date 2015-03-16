@@ -5,8 +5,8 @@ def main():
     bestandsNaam = "muis.txt"
     htmlBestand = "afvink6.html"
     sequentie = leesBestand(bestandsNaam)
-    bepaalGCpercentage (sequentie)
-    maakHTML (bepaalGCpercentage, sequentie, bestandsNaam, htmlBestand)
+    gcPercentage = bepaalGCpercentage (sequentie)
+    maakHTML (gcPercentage, sequentie, bestandsNaam, htmlBestand)
     #print(sequentie)
     
 def bepaalGCpercentage (sequentie):
@@ -18,7 +18,6 @@ def bepaalGCpercentage (sequentie):
     totalCount = gCount + cCount + aCount + tCount
     gcCount = gCount + cCount
     gcPercentage = float(gcCount) / float(totalCount)
-
     return (float(gcPercentage)*100)
 
 def leesBestand (bestandsNaam):
@@ -26,16 +25,16 @@ def leesBestand (bestandsNaam):
     sequentie = deMuis.read()
     return sequentie
 
-def maakHTML (bepaalGCpercentage, sequentie, bestandsNaam, htmlBestand):
+def maakHTML (gcPercentage, sequentie, bestandsNaam, htmlBestand):
     #maakt een HTML bestand met de sequentie en berekende GC percentage
     file = open(htmlBestand, "w")
     
     message = """<html>
     <head></head>
-    <body><p>bestandsnaam:  <%bestandsNaam%></p><br
-    <p>gcPercentage: <%gcPercentage%></p><br
-    <p>sequentie: <%sequentie%></p></body>
-    </html>"""
+    <body><p>bestandsnaam:  {bestandsNaam}</p><br
+    <p>gcPercentage: {gcPercentage}</p><br
+    <p>sequentie: {sequentie}</p></body>
+    </html>""".format(bestandsNaam=bestandsNaam, gcPercentage=gcPercentage, sequentie=sequentie)
 
     file.write(message)
     file.close
