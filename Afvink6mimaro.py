@@ -3,8 +3,10 @@ def main():
     #sequentie = "GAAATTAACACCCCCAG"
     
     bestandsNaam = "muis.txt"
+    htmlBestand = "afvink6.html"
     sequentie = leesBestand(bestandsNaam)
     bepaalGCpercentage (sequentie)
+    maakHTML (bepaalGCpercentage, sequentie, bestandsNaam, htmlBestand)
     #print(sequentie)
     
 def bepaalGCpercentage (sequentie):
@@ -24,13 +26,13 @@ def leesBestand (bestandsNaam):
     sequentie = deMuis.read()
     return sequentie
 
-def maakHTML (gcPercentage, sequentie, bestandsnaam):
+def maakHTML (bepaalGCpercentage, sequentie, bestandsNaam, htmlBestand):
     #maakt een HTML bestand met de sequentie en berekende GC percentage
-    file = open("afvink6.html", "w")
-
+    file = open(htmlBestand, "w")
+    
     message = """<html>
     <head></head>
-    <body><p>bestandsnaam:  <%bestandsnaam%><br
+    <body><p>bestandsnaam:  <%bestandsNaam%><br
     gcPercentage: <%gcPercentage%><br
     sequentie: <%sequentie%>/>/></p></body>
     </html>"""
