@@ -23,6 +23,11 @@ def bepaalGCpercentage (sequentie):
 
 def maakHTML (gcPercentage, sequentie, bestandsnaam):
     #maakt een HTML bestand met de sequentie en berekende GC percentage
-    
+    file = open("afvink6.html")
+
+    message = """<html>
+    <head></head>
+    <body><p>Hello! Martijn</p></body>
+    </html>"""
 
 main()
