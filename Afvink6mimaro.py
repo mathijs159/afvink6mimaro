@@ -23,4 +23,10 @@ def leesBestand (bestandsNaam):
     deMuis = open(bestandsNaam, "r+")
     sequentie = deMuis.read()
     return sequentie
+
+def maakHTML (gcPercentage, sequentie, bestandsnaam):
+    #maakt een HTML bestand met de sequentie en berekende GC percentage
+    pass
+    
+
 main()
