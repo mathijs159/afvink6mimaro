@@ -32,9 +32,9 @@ def maakHTML (bepaalGCpercentage, sequentie, bestandsNaam, htmlBestand):
     
     message = """<html>
     <head></head>
-    <body><p>bestandsnaam:  <%bestandsNaam%><br
-    gcPercentage: <%gcPercentage%><br
-    sequentie: <%sequentie%>/>/></p></body>
+    <body><p>bestandsnaam:  <%bestandsNaam%></p><br
+    <p>gcPercentage: <%gcPercentage%></p><br
+    <p>sequentie: <%sequentie%></p></body>
     </html>"""
 
     file.write(message)
