@@ -27,4 +27,3 @@ def bepaalGCpercentage (sequentie):
 >>>>>>> 79d4d81721a30322477bdeea7f33331d3cd703f2
 
 main()
-    
