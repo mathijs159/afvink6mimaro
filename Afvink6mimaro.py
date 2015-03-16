@@ -1,6 +1,5 @@
 def main():
     #call van verschillende methodes
-    sequentie = "GAAATTAACACCCCCAG"
     bepaalGCpercentage (sequentie)
 
 def bepaalGCpercentage (sequentie):
